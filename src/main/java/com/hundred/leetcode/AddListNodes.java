@@ -9,19 +9,19 @@ public class AddListNodes {
 		ListNode p = l1, q = l2, curr = dummyHead;
 		int carry = 0;
 		while (p != null || q != null) {
-			int x = (p != null) ? p.getVal() : 0;
-			int y = (q != null) ? q.getVal() : 0;
-			int sum = carry + x + y;
-			carry = sum / 10;
-			curr.setNext(new ListNode(sum % 10));
-			curr = curr.getNext();
+			int x = (p != null) ? p.getVal() : 0; 
+			int y = (q != null) ? q.getVal() : 0; 
+			int sum = carry + x + y; 
+			carry = sum / 10; 
+			curr.setNext(new ListNode(sum % 10)); 
+			curr = curr.getNext(); 
 			if (p != null)
 				p = p.getNext();
 			if (q != null)
 				q = q.getNext();
 		}
 		if (carry > 0) {
-			curr.setNext(new ListNode(carry));
+			curr.setNext(new ListNode(carry)); 
 		}
 		return dummyHead.getNext();
 	}
@@ -39,6 +39,7 @@ public class AddListNodes {
 
 			result = result.getNext();
 		}
+		
 	}
 
 }
