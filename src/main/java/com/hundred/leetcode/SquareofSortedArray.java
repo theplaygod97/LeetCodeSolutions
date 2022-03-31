@@ -4,6 +4,14 @@ public class SquareofSortedArray {
 
 	//Re-visit for better sol
 	
+	/*
+	 * public int[] sortedSquares(int[] nums) { int[] squaredNums = new
+	 * int[nums.length]; int low = 0, high = nums.length - 1; int index = high;
+	 * while (low <= high) { if (Math.abs(nums[low]) >= Math.abs(nums[high])) {
+	 * squaredNums[index] = nums[low] * nums[low]; index--; low++; } else {
+	 * squaredNums[index] = nums[high] * nums[high]; index--; high--; } } return
+	 * squaredNums; }
+	 */
 	static int[] findsquares(int[] arr) {
 		int[] sqarr = new int[arr.length];
 		for (int a = 0; a < arr.length; a++) {
